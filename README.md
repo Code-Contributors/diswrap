@@ -2,6 +2,9 @@
 [![](https://aschey.tech/tokei/github/tibue99/ezcord?style=for-the-badge)](https://github.com/Code-Contributors/diswrap)
 
 
+## Infos
+You can use it with discord.js or only diswrap. Your choice!
+
 ## Installation
 ```bash
 npm install diswrap
