@@ -1,0 +1,37 @@
+{
+  "name": "diswrap-games",
+  "version": "1.0.0",
+  "description": "A NPM Package with a Collection of Minigames for the diswrap package.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "games",
+    "api"
+  ],
+  "author": "verleihernix",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "html-entities": "^2.4.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "contributors": [
+    "verleihernix",
+    "Code Contributors (CC Studios)"
+  ]
+}
