@@ -1,0 +1,35 @@
+{
+  "name": "diswrap-builders",
+  "version": "1.0.3",
+  "description": "The Builders Package for Diswrap",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "api",
+    "wrapper",
+    "builders"
+  ],
+  "author": "verleihernix",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.7.0",
+    "discord.js": "^14.13.0",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "contributors": [
+    "verleihernix",
+    "Code Contributors (CC Studios)"
+  ]
+}
