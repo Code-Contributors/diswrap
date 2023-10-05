@@ -1,0 +1,43 @@
+{
+  "name": "diswrap",
+  "version": "1.2.0",
+  "description": "An Easy-To-Use and Modern Discord API Wrapper",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "directories": {
+    "lib": "src"
+  },
+  "exports": {
+    "require": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "discord",
+    "api",
+    "wrapper",
+    "bot"
+  ],
+  "contributors": [
+    "verleihernix <discord.com/users/1068903407588495472>",
+    "Code Contributors (CC Studios) <discord.gg/krebk2SH4h>"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "verleihernix, Code Contributors (CC Studios)",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "diswrap-builders": "^1.0.1",
+    "diswrap-games": "^1.0.0",
+    "diswrap-util": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.7.0",
+    "typescript": "^5.2.2"
+  }
+}
