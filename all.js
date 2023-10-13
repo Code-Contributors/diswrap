@@ -203,19 +203,6 @@ class ThreadManager extends diswrap_util_5.ThreadManager {
     }
 }
 exports.ThreadManager = ThreadManager;
-/**
- * ### Modal Class
- * This is the Modal Class. With this you can create Modals for your Bot
- * @example
- * const modal = new Modal()
- * .ID('customid') //sets a customid for this modal
- * .Title('Title') //sets the title for this modal
- * .Components(
- *      //here you can add components
- *  )
- *
- *
- */
 class Modal extends diswrap_builders_1.Modal {
     /**
      * - The Components to add
@@ -243,19 +230,6 @@ class Modal extends diswrap_builders_1.Modal {
     }
 }
 exports.Modal = Modal;
-/**
- * ### The Button Class
- * With this you can create Buttons for your Bot
- * @example
- * new ButtonBuilder();
- * .Emoji('ðŸ”¥') //sets an Emoji to the button
- * .ID('customid') //sets an CustomID for the button
- * .Label('Button Label') //sets an Label for the button
- * .Style(ButtonStyles.Primary) //sets the Style of the Button
- * .URL('button url') //sets the URL to the button if the Style is set to Link
- *
- * @param BBuilder
- */
 class Button extends diswrap_builders_2.Button {
     /**
      * This sets an Emoji to the Button
@@ -299,19 +273,6 @@ class Button extends diswrap_builders_2.Button {
     }
 }
 exports.Button = Button;
-/**
- * ### The Embed Class
- * With this you can create fully customizable Embeds for your Bot
- * @example
- * new Embed()
- * .Title('Embed Title') // sets the title for the embed
- * .Description('Embed Description') // sets a description for the embed
- * .Color('Green') //sets the color of the embed
- * .Author({ name: 'Author Name', iconURL: 'Author Icon URL' }) // sets a author for the embed
- * .Footer({ text: 'Footer Text', iconURL: 'Footer Icon URL' }) // sets an footer for the embed
- * .Timestamp() //sets a timestamp
- * // More goes here
- */
 class Embed extends diswrap_builders_3.Embed {
     /**
      * Sets an Author for the Embed
@@ -403,15 +364,6 @@ class Embed extends diswrap_builders_3.Embed {
     }
 }
 exports.Embed = Embed;
-/**
- * ### The Select Menu Class
- * With this you can create SelectMenus for your Bot
- * @example
- * new SelectMenu()
- * .ID('customid') // sets an customid for the selectmenu
- * .Placeholder('Placeholder') // sets an placeholder to the selectmenu
- * // More goes here
- */
 class SelectMenu extends diswrap_builders_4.SelectMenu {
     /**
      * Sets an CustomID to the SelectMenu
@@ -463,15 +415,6 @@ class SelectMenu extends diswrap_builders_4.SelectMenu {
     }
 }
 exports.SelectMenu = SelectMenu;
-/**
- * ### The ActionRow Class
- * With this you can create ActionRows for your Bot
- * @example
- * new ActionRow()
- * .Components(
- *    // add components
- * )
- */
 class ActionRow extends diswrap_builders_5.ActionRow {
     /**
      * Sets Componetns to the ActionRow
@@ -483,26 +426,6 @@ class ActionRow extends diswrap_builders_5.ActionRow {
     }
 }
 exports.ActionRow = ActionRow;
-/**
- * ### The BotClient
- * Create your DiscordBot with this Class!
- * @example JavaScript
- * const { BotClient, BotIntents, ActivityTypes } = require('diswrap');
- * const bot = new BotClient({
- *    intents: [BotIntents.MessageContent, BotIntents.Guilds, BotIntents.GuildMessages],
- *    token: 'DISCORD BOT TOKEN',
- * });
- *
- * bot.setPresence({
- *   status: 'idle',
- *   activities: [{ name: 'with diswrap', type: ActivityTypes.Playing }],
- * });
- *
- * bot.readyConsole({ output: 'The Bot is online!' });
- *
- * bot.command({ prefix: '!', name: 'ping', reply: 'Ping Pong!' });
- *
- */
 class BotClient {
     constructor(options) {
         this.client = new d_js_exports_3.Client({ intents: options.intents });
