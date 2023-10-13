@@ -16,18 +16,35 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Permissions = exports.Attachment = exports.TextInput = exports.ThreadManager = exports.MessageManager = exports.ActionRow = exports.SelectMenu = exports.Embed = exports.Button = exports.Modal = exports.ButtonStyles = exports.Activity = exports.BotIntents = exports.Event = exports.GuessTheNumber = exports.BotClient = void 0;
 __exportStar(require("diswrap-builders"), exports);
-const discord_js_1 = require("discord.js");
-Object.defineProperty(exports, "Activity", { enumerable: true, get: function () { return discord_js_1.ActivityType; } });
-Object.defineProperty(exports, "ButtonStyles", { enumerable: true, get: function () { return discord_js_1.ButtonStyle; } });
-Object.defineProperty(exports, "BotIntents", { enumerable: true, get: function () { return discord_js_1.GatewayIntentBits; } });
-const diswrap_builders_1 = require("diswrap-builders");
+const d_js_exports_1 = require("./d.js.exports");
+const d_js_exports_2 = require("./d.js.exports");
+Object.defineProperty(exports, "ButtonStyles", { enumerable: true, get: function () { return d_js_exports_2.ButtonStyle; } });
+__exportStar(require("diswrap-games"), exports);
+const d_js_exports_3 = require("./d.js.exports");
+const d_js_exports_4 = require("./d.js.exports");
+Object.defineProperty(exports, "BotIntents", { enumerable: true, get: function () { return d_js_exports_4.GatewayIntentBits; } });
+const d_js_exports_5 = require("./d.js.exports");
+Object.defineProperty(exports, "Activity", { enumerable: true, get: function () { return d_js_exports_5.ActivityType; } });
 const diswrap_util_1 = require("diswrap-util");
-Object.defineProperty(exports, "Event", { enumerable: true, get: function () { return diswrap_util_1.Event; } });
+const diswrap_util_2 = require("diswrap-util");
+const diswrap_util_3 = require("diswrap-util");
+const diswrap_util_4 = require("diswrap-util");
+const diswrap_util_5 = require("diswrap-util");
+const diswrap_builders_1 = require("diswrap-builders");
+const diswrap_builders_2 = require("diswrap-builders");
+const diswrap_builders_3 = require("diswrap-builders");
+const diswrap_builders_4 = require("diswrap-builders");
+const diswrap_builders_5 = require("diswrap-builders");
+const diswrap_util_6 = require("diswrap-util");
+Object.defineProperty(exports, "Event", { enumerable: true, get: function () { return diswrap_util_6.Event; } });
 const diswrap_games_1 = require("diswrap-games");
 Object.defineProperty(exports, "GuessTheNumber", { enumerable: true, get: function () { return diswrap_games_1.GuessTheNumber; } });
-const builders_1 = require("@discordjs/builders");
-__exportStar(require("diswrap-games"), exports);
 __exportStar(require("diswrap-util"), exports);
+var print = console.log;
+var printerror = console.error;
+var printtable = console.table;
+var printclear = console.clear;
+__exportStar(require("./d.js.exports"), exports);
 /**
  * ### The TextInput Class
  * With this class you can create TextInputs for your Bot
@@ -100,7 +117,7 @@ exports.TextInput = TextInput;
  * .File('file name') // sets an file to the attachment
  * @param Atm - Atm
  */
-class Attachment extends diswrap_util_1.Attachment {
+class Attachment extends diswrap_util_2.Attachment {
     /**
      * Sets an Description to the Attachment
      * @param description - The Description
@@ -133,7 +150,7 @@ exports.Attachment = Attachment;
  * With this class, you can easily Manage or Check Permissions of a User
  * @param Perms - The Perms
  */
-class Permissions extends diswrap_util_1.Permissions {
+class Permissions extends diswrap_util_3.Permissions {
     /**
      * Add Permissions
      * @param bits - The Bits
@@ -182,7 +199,7 @@ exports.Permissions = Permissions;
  * With this class you can easily manage Messages.
  * @param MManager - diswrap-util MessageManager
  */
-class MessageManager extends diswrap_util_1.MessageManager {
+class MessageManager extends diswrap_util_4.MessageManager {
     /**
      * Pin a Message in a channel
      * @param message - The Message to pin
@@ -224,7 +241,7 @@ exports.MessageManager = MessageManager;
  * ### The ThreadManager
  * With this class you can easily Manage Threads
  */
-class ThreadManager extends diswrap_util_1.ThreadManager {
+class ThreadManager extends diswrap_util_5.ThreadManager {
     /**
      * Checks if the Thread is activ
      * @param cache - The Cache
@@ -297,7 +314,7 @@ exports.Modal = Modal;
  *
  * @param BBuilder
  */
-class Button extends diswrap_builders_1.Button {
+class Button extends diswrap_builders_2.Button {
     /**
      * This sets an Emoji to the Button
      * @param emj - The Emoji to add
@@ -353,7 +370,7 @@ exports.Button = Button;
  * .Timestamp() //sets a timestamp
  * // More goes here
  */
-class Embed extends diswrap_builders_1.Embed {
+class Embed extends diswrap_builders_3.Embed {
     /**
      * Sets an Author for the Embed
      * @example
@@ -453,7 +470,7 @@ exports.Embed = Embed;
  * .Placeholder('Placeholder') // sets an placeholder to the selectmenu
  * // More goes here
  */
-class SelectMenu extends diswrap_builders_1.SelectMenu {
+class SelectMenu extends diswrap_builders_4.SelectMenu {
     /**
      * Sets an CustomID to the SelectMenu
      * @param id - The CustomID
@@ -513,7 +530,7 @@ exports.SelectMenu = SelectMenu;
  *    // add components
  * )
  */
-class ActionRow extends diswrap_builders_1.ActionRow {
+class ActionRow extends diswrap_builders_5.ActionRow {
     /**
      * Sets Componetns to the ActionRow
      * @param components - The Components
@@ -546,7 +563,7 @@ exports.ActionRow = ActionRow;
  */
 class BotClient {
     constructor(options) {
-        this.client = new discord_js_1.Client({ intents: options.intents });
+        this.client = new d_js_exports_3.Client({ intents: options.intents });
         this.cogs = new Map();
         this.client.login(options.token);
     }
@@ -658,7 +675,7 @@ class BotClient {
             return console.error('You must set a Name to the SlashCommand!');
         if (!slashcommandoptions.description)
             return console.error('You must set a Description to the SlashCommand!');
-        new builders_1.SlashCommandBuilder()
+        new d_js_exports_1.SlashCommandBuilder()
             .setName(slashcommandoptions.name)
             .setDescription(slashcommandoptions.description);
         this.client.on('interactionCreate', async (interaction) => {
