@@ -674,10 +674,5 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Permissions = exports.Attachment = exports.TextInput = exports.ThreadManager = exports.MessageManager = exports.ActionRow = exports.SelectMenu = exports.Embed = exports.Button = exports.Modal = exports.ButtonStyles = exports.Activity = exports.BotIntents = exports.Event = exports.GuessTheNumber = exports.BotClient = void 0;
-__exportStar(require("diswrap-builders"), exports);
-const d_js_exports_1 = require("./d.js.exports");
-const d_js_exports_2 = require("./d.js.exports");
 Object.defineProperty(exports, "ButtonStyles", { enumerable: true, get: function () { return d_js_exports_2.ButtonStyle; } });
 __exportStar(require("diswrap-games"), exports);
