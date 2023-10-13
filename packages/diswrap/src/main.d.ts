@@ -1,12 +1,47 @@
 /// <reference types="node" />
 export * from 'diswrap-builders';
-import { ClientEvents as CEvents, ActivityType as Activity, PresenceData, APIMessageComponentEmoji, ButtonStyle, APISelectMenuOption, ActionRowBuilder, AnyComponentBuilder, RestOrArray, TextInputBuilder, EmbedAuthorOptions, RGBTuple, EmbedFooterOptions, StringSelectMenuOptionBuilder, MessageResolvable, EmojiIdentifierResolvable, FetchedThreads, FetchArchivedThreadOptions, FetchedThreadsMore, TextInputStyle, BufferResolvable, BitField, BitFieldResolvable, PermissionResolvable, GatewayIntentBits as BotIntents, PresenceStatusData } from 'discord.js';
-import { Modal as MBuilder, Button as BBuilder, Embed as EBuilder, SelectMenu as SBuilder, ActionRow as ABuilder } from 'diswrap-builders';
-import { Event, MessageManager as MManager, ThreadManager as THManager, Attachment as Atm, Permissions as Perms, TextInput as TextI } from 'diswrap-util';
+import { TextInputStyle } from './d.js.exports';
+import { BufferResolvable } from './d.js.exports';
+import { BitFieldResolvable } from './d.js.exports';
+import { PermissionResolvable } from './d.js.exports';
+import { MessageResolvable } from './d.js.exports';
+import { BitField } from './d.js.exports';
+import { EmojiIdentifierResolvable } from './d.js.exports';
+import { FetchedThreads } from './d.js.exports';
+import { FetchedThreadsMore } from './d.js.exports';
+import { FetchArchivedThreadOptions } from './d.js.exports';
+import { ActionRowBuilder } from './d.js.exports';
+import { TextInputBuilder } from './d.js.exports';
+import { APIMessageComponentEmoji } from './d.js.exports';
+import { ButtonStyle } from './d.js.exports';
+import { EmbedAuthorOptions } from './d.js.exports';
+import { RGBTuple } from './d.js.exports';
+import { EmbedFooterOptions } from './d.js.exports';
+export * from 'diswrap-games';
+import { APISelectMenuOption } from './d.js.exports';
+import { StringSelectMenuOptionBuilder } from './d.js.exports';
+import { RestOrArray } from './d.js.exports';
+import { AnyComponentBuilder } from './d.js.exports';
+import { GatewayIntentBits as BotIntents } from './d.js.exports';
+import { PresenceStatusData } from './d.js.exports';
+import { ActivityType as Activity } from './d.js.exports';
+import { PresenceData } from './d.js.exports';
+import { ClientEvents as CEvents } from './d.js.exports';
+import { TextInput as TextI } from 'diswrap-util';
+import { Attachment as Atm } from 'diswrap-util';
+import { Permissions as Perms } from 'diswrap-util';
+import { MessageManager as MManager } from 'diswrap-util';
+import { ThreadManager as THManager } from 'diswrap-util';
+import { Modal as MBuilder } from 'diswrap-builders';
+import { Button as BBuilder } from 'diswrap-builders';
+import { Embed as EBuilder } from 'diswrap-builders';
+import { SelectMenu as SBuilder } from 'diswrap-builders';
+import { ActionRow as ABuilder } from 'diswrap-builders';
+import { Event } from 'diswrap-util';
 import { GuessTheNumber } from 'diswrap-games';
 import { Stream } from 'stream';
-export * from 'diswrap-games';
 export * from 'diswrap-util';
+export * from './d.js.exports';
 /**
  * ### The TextInput Class
  * With this class you can create TextInputs for your Bot
