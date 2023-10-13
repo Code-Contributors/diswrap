@@ -1,15 +1,3 @@
-__exportStar(require("./d.js.exports"), exports);
-/**
- * ### The TextInput Class
- * With this class you can create TextInputs for your Bot
- * @example
- * new TextInput()
- * .ID('customid') // sets an CustomID to the TextInput
- * .Label('Label') // sets an Label to the TextInput
- * .Placeholder('Placeholder') // sets an Placeholder to the TextInput
- * //more goes here
- * @param TextI - TextI
- */
 class TextInput extends diswrap_util_1.TextInput {
     /**
      * Sets an CustomID to the TextInput
