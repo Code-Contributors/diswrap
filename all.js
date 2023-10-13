@@ -1,34 +1,3 @@
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Permissions = exports.Attachment = exports.TextInput = exports.ThreadManager = exports.MessageManager = exports.ActionRow = exports.SelectMenu = exports.Embed = exports.Button = exports.Modal = exports.ButtonStyles = exports.Activity = exports.BotIntents = exports.Event = exports.GuessTheNumber = exports.BotClient = void 0;
-__exportStar(require("diswrap-builders"), exports);
-const d_js_exports_1 = require("./d.js.exports");
-const d_js_exports_2 = require("./d.js.exports");
-Object.defineProperty(exports, "ButtonStyles", { enumerable: true, get: function () { return d_js_exports_2.ButtonStyle; } });
-__exportStar(require("diswrap-games"), exports);
-const d_js_exports_3 = require("./d.js.exports");
-const d_js_exports_4 = require("./d.js.exports");
-Object.defineProperty(exports, "BotIntents", { enumerable: true, get: function () { return d_js_exports_4.GatewayIntentBits; } });
-const d_js_exports_5 = require("./d.js.exports");
-Object.defineProperty(exports, "Activity", { enumerable: true, get: function () { return d_js_exports_5.ActivityType; } });
-const diswrap_util_1 = require("diswrap-util");
-const diswrap_util_2 = require("diswrap-util");
-const diswrap_util_3 = require("diswrap-util");
-const diswrap_util_4 = require("diswrap-util");
-const diswrap_util_5 = require("diswrap-util");
-const diswrap_builders_1 = require("diswrap-builders");
-const diswrap_builders_2 = require("diswrap-builders");
-const diswrap_builders_3 = require("diswrap-builders");
-const diswrap_builders_4 = require("diswrap-builders");
-const diswrap_builders_5 = require("diswrap-builders");
-const diswrap_util_6 = require("diswrap-util");
-Object.defineProperty(exports, "Event", { enumerable: true, get: function () { return diswrap_util_6.Event; } });
-const diswrap_games_1 = require("diswrap-games");
-Object.defineProperty(exports, "GuessTheNumber", { enumerable: true, get: function () { return diswrap_games_1.GuessTheNumber; } });
-__exportStar(require("diswrap-util"), exports);
-var print = console.log;
-var printerror = console.error;
-var printtable = console.table;
-var printclear = console.clear;
 __exportStar(require("./d.js.exports"), exports);
 /**
  * ### The TextInput Class
